@@ -9,7 +9,7 @@ api = Blueprint('api', __name__, url_prefix = '/api')
 def getdata():
     return { 'some': "value",
             'other': "Data"}
-
+# test
 @api.route('/characters', methods =['POST'])
 @token_required
 def create_character(current_user_token):
